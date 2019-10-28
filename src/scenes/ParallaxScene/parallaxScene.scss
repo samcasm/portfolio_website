@@ -177,7 +177,6 @@
 
 @media only screen and (max-width: 600px) {
     .parallax-scene{
-        height: 100vh;
 
         #navbar{
             .burger-menu{
@@ -188,7 +187,9 @@
             }
         }
         .description{
-            font-size: 1.9em;
+            padding: 10px 20px;
+            font-size: 1em;
+            width: 100%;
         }
         .menu {
             ul {

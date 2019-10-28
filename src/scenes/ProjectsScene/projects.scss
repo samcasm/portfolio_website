@@ -4,7 +4,7 @@
 
 .projects{
     padding-top: 4%;
-    height: 80vh;
+    height: inherit;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,6 @@
         padding-top: 40px;
         display: flex;
         flex-direction: column;
-        width: 100%;
         >div{
             display: flex;
             justify-content: space-between;
@@ -89,6 +88,9 @@
       display: block;
     }
     .projects{
+        .header{
+            font-size: 1.3em;
+        }
         .project-images{
             >div{
                 display: block;

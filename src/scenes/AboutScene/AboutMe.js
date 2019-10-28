@@ -18,7 +18,7 @@ export default class ParallaxScene extends Component {
 	render() {
 		return (
 			<section className="aboutMe" ref={el => this.aboutmeScene = el}>
-				<p>My journey so far</p>
+				<p>My Journey So Far</p>
 				<div className="header">
 					{/* <img src="https://s3.us-east-2.amazonaws.com/samcasmbucket/timeline.svg" /> */}
 					<VerticalTimeline>
@@ -69,17 +69,22 @@ export default class ParallaxScene extends Component {
 							<ul>
 								<li>Hosted a radio show at the WSIA FM</li>
 								<li>Winner of the football championship at CSI</li>
-								<li>Awarded the CSI academic excellence scholarship for 2019</li>
+								<li >Awarded the CSI academic excellence scholarship for 2019</li>
+								<a href="https://samcasmbucket.s3.us-east-2.amazonaws.com/wsia_radio.jpg" target="_blank">
+									<img id="radio_img" src="https://samcasmbucket.s3.us-east-2.amazonaws.com/wsia_radio.jpg"/>
+								</a>
 							</ul>
 						</VerticalTimelineElement>
 						<VerticalTimelineElement
 							className="vertical-timeline-element--education"
-							date="August 2019"
+							date="August 2018"
 							iconStyle={{ background: 'rgb(142, 68, 173)', color: '#fff' }}
 							icon={<Flight />}
 						>
 							<h3 className="vertical-timeline-element-title">Landed in America</h3>
 							<h4 className="vertical-timeline-element-subtitle">Master's degree commences</h4>
+							<h4 className="vertical-timeline-element-subtitle">Computer Science</h4>
+
 							
 						</VerticalTimelineElement>
 						<VerticalTimelineElement
@@ -122,9 +127,9 @@ export default class ParallaxScene extends Component {
 					</VerticalTimeline>
 				</div>
 				<ul className="footer">
-					<li><img src="https://s3.us-east-2.amazonaws.com/samcasmbucket/GitHub-Mark-Light-120px-plus.png" alt="" /><a target="_blank" href="https://github.com/samcasm">Checkout my github</a></li>
-					<li><img src="https://s3.us-east-2.amazonaws.com/samcasmbucket/resume-icon.png" alt="" /><a download="samir_resume" href="https://samcasmbucket.s3.us-east-2.amazonaws.com/resume.pdf">Download resume</a></li>
-					<li><img src="https://s3.us-east-2.amazonaws.com/samcasmbucket/email-icon.png" alt="" /><a target="_top" href="mailto:samir7kutty@gmail.com">Email Me</a></li>
+					<li><img src="https://s3.us-east-2.amazonaws.com/samcasmbucket/GitHub-Mark-Light-120px-plus.png" alt="" /><a className="long_text" target="_blank" href="https://github.com/samcasm">Checkout my github</a><a className="short_text" target="_blank" href="https://github.com/samcasm">Github</a></li>
+					<li><img src="https://s3.us-east-2.amazonaws.com/samcasmbucket/resume-icon.png" alt="" /><a download="samir_resume" className="long_text" href="https://samcasmbucket.s3.us-east-2.amazonaws.com/resume.pdf">Download resume</a><a download="samir_resume" className="short_text" href="https://samcasmbucket.s3.us-east-2.amazonaws.com/resume.pdf">Resume</a></li>
+					<li><img src="https://s3.us-east-2.amazonaws.com/samcasmbucket/email-icon.png" alt="" /><a target="_top" className="long_text" href="mailto:samir7kutty@gmail.com">Email Me</a><a target="_top" className="short_text" href="mailto:samir7kutty@gmail.com">Email</a></li>
 				</ul>
 			</section>
 		);

@@ -85,9 +85,9 @@ export default class ParallaxScene extends Component {
 	render() {
 		window.onload = function(){
 			var options = {
-				strings: ['Samir absolutely <i>loves</i> the ubuntu terminal.. (clearly :|)', 'This is where you will find him <i>most</i> days.', 
+				strings: ['Samir absolutely <i>loves</i> the ubuntu terminal..... (clearly :|)', 'This is where you will find him <i>most</i> days.', 
 				'His strongest skill lies in his ability to <b>debug</b> large codebases <i>astoundingly</> fast!'],
-				typeSpeed: 60,
+				typeSpeed: 70,
 				loop: true
 			};
 			  
