@@ -49,7 +49,6 @@
 
 .parallax-scene{
     background-color:#2D0D22;
-    width: 100%;
     height: 93vh;
     color: white;
     position: relative;
@@ -60,13 +59,13 @@
 
     .menu {
         position: fixed;
-        width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #2D0D22;
         z-index: 100;
+        width: 100%;
     }
 
     #navbar {
@@ -148,7 +147,7 @@
     cursor: pointer;
     background: #2D0D22;
     padding: 10px;
-    margin-right: 12%;
+    padding-right: 12%;
 }
 
 .burger-menu .bar1,
@@ -177,26 +176,29 @@
 
 @media only screen and (max-width: 600px) {
     .parallax-scene{
-
+        
         #navbar{
             .burger-menu{
                 display: inline-block;
+                padding-right: 10%;
             }
             ul{
                 display: none;
             }
+            .initials{
+                padding-left: 10%;
+            }
         }
         .description{
             padding: 10px 20px;
-            font-size: 1em;
-            width: 100%;
+            font-size: 0.9em;
+            width: inherit;
         }
         .menu {
             ul {
                 cursor: pointer;
                 list-style-type: none;
                 padding: 0;
-                width: 100%;
                 text-align: center;
                 li{
                     padding: 20px 0px;
@@ -204,7 +206,6 @@
                     &:hover{
                         background-color: white;
                         color: #2D0D22;
-                        width: 100%;
                     }
                 }
             }
